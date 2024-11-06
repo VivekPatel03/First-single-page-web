@@ -83,12 +83,13 @@ span{
 
 #hero .content{
     color: white;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
     flex-direction: column;
     justify-content: start;
     width: 40%;
     margin-top: 200px;
-    margin-left: 80px;
+    margin-left: 40px;
     margin-bottom: 300px;
 }
 #check{
@@ -127,7 +128,7 @@ span{
 }
 
 .img{
-    height: 85vh;
+    height: 450px;
     position: relative;
     top: 120px;
 
@@ -493,7 +494,12 @@ span{
 /* media quaries */
 
 @media screen and (max-width:768px) {
-   
+    #check{
+        display: block;
+    }
+    #hero input{
+        display: none;
+    }
       #hero nav ul:hover{
         visibility: hidden;
       }
@@ -505,10 +511,13 @@ span{
 .container{
    flex-direction: column;
 }
+
+#hero .content{
+    display: flex;
+}
 .img{
-    
-    height: 320px;
-    width: 500px;
+    height: 370px;
+    width: 550px;
 }
 
 #hero nav{
@@ -518,11 +527,12 @@ span{
 
 #hero ul{
     display: flex;
+    flex-direction: column;
     list-style: none;
     gap: 20px;
     position: relative;
-    top: 60px;
-    right: 60px;
+    top: 145px;
+    left: 275px;
     background-color: rgb(28, 27, 27);
     padding: 15px;
 }
