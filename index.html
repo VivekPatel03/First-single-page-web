@@ -13,18 +13,19 @@
   <!-- Section1 -->
   <section>
     <header id="hero">
-      <input type="checkbox" name="" id="check">
+      <input type="checkbox" id="check">
         <nav>
             <h1><span id="pf">PF</span>&nbsp;&nbsp; <span id="adobe">Adobe Portfolio</span></h1>
-              <ul>
+              <ul class="drop">
+                <!-- <label for="check" class="close-menu"><i class="fa-solid fa-x"></i></label> -->
                 <li><a href="#">Overview</a></li>
-                <li><a href="#sec2"><span>Photography</span></a></li>
+                <li><a href="sec2"><span>Photography</span></a></li>
                 <li><a href="#">Example</a></li>
                 <li><a href="#">Resource</a></li>
                 <li><a href="#">Plans</a></li>
               </ul>
             <a href="#" id="sign">sign in</a>
-        <label for="check" id="check"><i class="fa-solid fa-bars"></i></label>
+        <label for="check" class="open-menu"><i class="fa-solid fa-bars"></i></label>
         </nav>  
             <div class="container">
                 <div class="content">
@@ -257,5 +258,9 @@
        </div>
       
     </footer>
+
+
+
+    <script src="script.js"></script>
 </body>
 </html>
